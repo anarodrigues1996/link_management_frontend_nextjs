@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Link from 'next/link';
 
 function Listlink () {
   const [isLoading, setLoading] = useState(false)
@@ -69,8 +70,8 @@ function MyRow(props)
       <td>{ props.data.created_at }</td>
       <td>{ props.data.updated_at }</td>
       <td>
-        <a href="#" className='btn btn-outline-primary mx-1'>Editar</a>
-        <a href="#" className='btn btn-outline-danger mx-1'>Eliminar</a>
+        <Link href={{ pathname: '/updatelink', query: { id: props.data.id} }} className='btn btn-outline-primary mx-1'>Editar</Link>
+        <Link href={{ pathname: '/deletelink', query: { id: props.data.id} }}className='btn btn-outline-danger mx-1'>Eliminar</Link>
       </td>
     </tr>
   )
