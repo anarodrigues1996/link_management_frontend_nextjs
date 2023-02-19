@@ -7,6 +7,7 @@ está em https://github.com/anarodrigues1996/link_management_api_adonijs
 
 ## Setup
 - Faz o clone do projeto
+- Entre na pasta do projecto e rode o comando "npm install"
 - Inicie o projeto com o comando "npm run dev"
 
 
