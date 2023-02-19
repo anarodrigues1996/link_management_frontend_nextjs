@@ -1,4 +1,5 @@
 import { useState, useEffect} from 'react'
+import Router from 'next/router'
 
 function CreateForm() {
   const [title, setTitle] = useState('')
@@ -39,15 +40,18 @@ function CreateForm() {
       },
       body: JSON.stringify({
         url: url,
-        setTile: title
+        title: title
 
       })
     });
     const content = await rawResponse.json();
     console.log(content);
 
+
     setTitle('')
     setUrl('')
+
+    Router.push('/')
 
   }
   useEffect(() => {
@@ -66,7 +70,7 @@ function CreateForm() {
       <div>
       {formErrors.title && <p className='text-danger'>{formErrors.title}</p>}
         <input
-          className="form-control my-2"
+          className="form-control"
           type="text"
           placeholder='Titulo'
           value={title}
@@ -82,7 +86,10 @@ function CreateForm() {
           onChange={(e) => setUrl(e.target.value)}
         />
         </div>
+        <a href='../components/listLink'>
         <button type="submit" className="btn btn-primary">Criar</button>
+        </a>
+        
       </form>
     </div>
   )
