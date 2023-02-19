@@ -47,7 +47,7 @@ function Listlink () {
               Atualizado em
             </th>
             <th>
-              Acçoes
+              Ações
             </th>
           </tr>
         </thead>
@@ -69,7 +69,8 @@ function MyRow(props)
       <td>{ props.data.created_at }</td>
       <td>{ props.data.updated_at }</td>
       <td>
-
+        <a href="#" className='btn btn-outline-primary mx-1'>Editar</a>
+        <a href="#" className='btn btn-outline-danger mx-1'>Eliminar</a>
       </td>
     </tr>
   )

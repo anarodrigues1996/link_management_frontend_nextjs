@@ -8,3 +8,9 @@ está em https://github.com/anarodrigues1996/link_management_api_adonijs
 ## Setup
 - Faz o clone do projeto
 - Inicie o projeto com o comando "npm run dev"
+
+
+## Telas
+
+### Listar Links
+![listar links](/telas/list.png "[listar links")

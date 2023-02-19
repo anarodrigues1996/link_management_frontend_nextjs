@@ -16,6 +16,9 @@ export default function Layout({ children }) {
               <li className="nav-item">
                 <Link href="/createlink" className="nav-link">Criar</Link>
               </li>
+              <li className="nav-item">
+                <Link href="/crawler" className="nav-link">Crawler</Link>
+              </li>
             </ul>
             {children}
           </div>
