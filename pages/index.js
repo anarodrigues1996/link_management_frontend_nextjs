@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>First Post</title>
+        <title>Listar Links</title>
       </Head>
       <Listlink/>
     </Layout>

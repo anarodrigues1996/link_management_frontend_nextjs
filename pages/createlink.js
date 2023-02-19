@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>First Post</title>
+        <title>Criar Link</title>
       </Head>
       <CreateForm/>
     </Layout>
