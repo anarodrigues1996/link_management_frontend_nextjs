@@ -1,18 +1,16 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-// import CreateLink from './createlink'
-import Listlink from './listlink'
+import Listlink from '../components/listlink'
+import Layout from '../components/layout';
 
 export default function Home() {
+
   return (
-    <div className={styles.container}>
+    <Layout>
       <Head>
-        <title>Link manegement</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <title>First Post</title>
       </Head>
-      <div className="container">
-        <Listlink/>
-      </div>
-    </div>
+      <Listlink/>
+    </Layout>
   )
+
 }
