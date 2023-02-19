@@ -17,3 +17,7 @@ está em https://github.com/anarodrigues1996/link_management_api_adonijs
 
 ### Criar Link
 ![criar  links](/telas/create.png "[criar  links")
+
+### Eliminar Link
+
+![Eliminar links](/telas/eliminar.png "[Eliminar links")
